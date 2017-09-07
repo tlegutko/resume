@@ -31,7 +31,7 @@
 
 \setcounter{secnumdepth}{-1}
 \RequirePackage[hmargin=1.25cm,vmargin=1.25cm,columnsep=1.25cm]{geometry}
-\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor, enumitem}
+\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,enumitem,multicol,wrapfig,graphicx}
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
@@ -132,7 +132,6 @@
 	{##2}\\[2pt]
 	{\Large\textit{##3}}
 	\renewcommand\inskip{\bigskip}}}
-    {\bigskip}
 
 % Use only \item inside this environment: no other macros
 % are allowed:
