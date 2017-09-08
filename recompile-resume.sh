@@ -2,3 +2,4 @@
 
 cd ~/resume
 pdflatex resume
+pdflatex resume

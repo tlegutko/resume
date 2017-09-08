@@ -30,8 +30,8 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,vmargin=1.25cm,columnsep=1.25cm]{geometry}
-\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,enumitem,multicol,wrapfig,graphicx}
+\RequirePackage[hmargin=1.25cm,top=1.25cm, bottom=0.5cm,columnsep=1.25cm]{geometry}
+\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,enumitem,multicol,tikz,transparent,fontawesome}
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
@@ -67,13 +67,13 @@
 % The command will start a new page and output in one column the
 % subject (first and last name) and subtitle.
 \renewcommand\part[2]{%
-    \twocolumn[%
     \begin{center}
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
-	{\fontfamily{pzc}\selectfont\Huge #2}
+	{\color[HTML]{801010}\fontfamily{pzc}\selectfont\Huge #2}
 	\bigskip
-    \end{center}]}
+      \end{center}
+      }
 
 % Overrides the \section command to capitalize every
 % word for cosmetic purposes and draws a rule under it.
@@ -108,13 +108,17 @@
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
     \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
+    \transparent{0.0} 
     \colorbox[HTML]{F5DD9D}{%
+    \transparent{1.0}
     \begin{tabularx}{\boxwidth}{c|X}
-    \Writinghand & {#2}\smallskip\\
+    \faGithub & {#2}\smallskip\\
     \Telefon     & {#3}\smallskip\\
     \Letter      & \href{mailto:#4}{#4}
     \ifstrempty{#1}{}{\smallskip\\ \Lightning & \href{http://#1}{#1}}
-    \end{tabularx}}}
+    \end{tabularx}}
+    \transparent{1.0}
+}
 
 % Every \item can be followed by one or more paragraphs
 % of description:
