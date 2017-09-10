@@ -30,13 +30,13 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.2cm,top=0.7cm, bottom=0.3cm,columnsep=0.75cm]{geometry}
+\RequirePackage[hmargin=1.2cm,top=0.7cm, bottom=0.34cm,columnsep=0.75cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,enumitem,multicol,tikz,transparent,fontawesome,titlesec}
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
 \titlespacing*{\section}
-  {0pt}{1\baselineskip}{0.5\baselineskip}
+  {0pt}{0.45\baselineskip}{0.5\baselineskip}
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
@@ -76,7 +76,7 @@
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
 	{\color[HTML]{801010}\fontfamily{pzc}\selectfont\Huge #2}
-	\vspace{0.6cm}
+	\vspace{0.9cm}
       \end{center}
       }
 
