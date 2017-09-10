@@ -30,11 +30,13 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,top=1cm, bottom=0.25cm,columnsep=1.25cm]{geometry}
-\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,enumitem,multicol,tikz,transparent,fontawesome}
+\RequirePackage[hmargin=1.2cm,top=0.7cm, bottom=0.3cm,columnsep=0.75cm]{geometry}
+\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,enumitem,multicol,tikz,transparent,fontawesome,titlesec}
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
+\titlespacing*{\section}
+  {0pt}{1\baselineskip}{0.5\baselineskip}
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
@@ -74,7 +76,7 @@
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
 	{\color[HTML]{801010}\fontfamily{pzc}\selectfont\Huge #2}
-	\bigskip
+	\vspace{0.6cm}
       \end{center}
       }
 
@@ -137,7 +139,7 @@
 	\inskip%
 	{\raggedleft\textsc{##1}\\[1pt]}
 	{##2}\\[2pt]
-	{\Large\textit{##3}}
+	{\bfseries{\large\textit{##3}}}
 	\renewcommand\inskip{\bigskip}}}
 
 % Use only \item inside this environment: no other macros
@@ -162,6 +164,7 @@
 % \item{fact}{description}
 % ]|
 \newenvironment{factlist}{%
+    \def\arraystretch{0.2}
     \newdimen\unbaseline
     \unbaseline=\dimexpr-\baselinestretch\baselineskip\relax
     \renewcommand\item[2]{%
