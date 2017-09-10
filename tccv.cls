@@ -30,8 +30,11 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,top=1.25cm, bottom=0.5cm,columnsep=1.25cm]{geometry}
+\RequirePackage[hmargin=1.25cm,top=1cm, bottom=0.25cm,columnsep=1.25cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,enumitem,multicol,tikz,transparent,fontawesome}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
@@ -147,7 +150,7 @@
     \renewcommand\item[4][]{%
 	{\textsc{##2}} & {\bfseries ##3} \\
 	\ifstrempty{##1}{}{& {\textsc{##1}} \\}
-	& {\textit{##4}}\medskip\\}
+	& ##4\medskip\\}
     \tabularx{\linewidth}{rX}}
     {\endtabularx}
 
