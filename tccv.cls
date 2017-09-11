@@ -37,6 +37,7 @@
 \usepackage[utf8]{inputenc}
 \titlespacing*{\section}
   {0pt}{0.45\baselineskip}{0.5\baselineskip}
+\graphicspath{ {images/} }
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
