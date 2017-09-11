@@ -1,3 +1,9 @@
 /resume.aux
 /resume.log
 /resume.out
+*.aux
+*.log
+*.out
+*.org
+resume.tex
+resume.pdf
