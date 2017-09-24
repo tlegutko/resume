@@ -30,7 +30,7 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.2cm,top=0.7cm, bottom=0.34cm,columnsep=0.75cm]{geometry}
+\RequirePackage[hmargin=0.9cm,top=0.7cm, bottom=0.34cm,columnsep=0.75cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,enumitem,multicol,tikz,transparent,fontawesome,titlesec}
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
