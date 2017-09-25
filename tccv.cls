@@ -36,7 +36,7 @@
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
 \titlespacing*{\section}
-  {0pt}{0.45\baselineskip}{0.5\baselineskip}
+  {0pt}{0.45\baselineskip}{0.4\baselineskip}
 \graphicspath{ {images/} }
 
 % Capitalize words of at least a minimum length (default to 3 chars).

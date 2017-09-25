@@ -6,3 +6,4 @@ sed -e 's/\(^.*\\fa[^G].*} \).*\\\\/\1personal info\\\\/g' \
 pdflatex resume-no-personal-info
 pdflatex resume-no-personal-info
 convert -density 300 -background white -alpha remove resume-no-personal-info.pdf images/resume-no-personal-info.png
+rclone copy -v -L --stats=1s --exclude .git/ . gdrive:cv/resume
